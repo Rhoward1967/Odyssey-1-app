@@ -1,36 +1,24 @@
 {
   "hosting": {
-    "public": "public",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
       }
-    ]
-  },
-  "functions": {
-    "source": "functions"
-  },
-  "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
-  },
-  "database": {
-    "rules": "database.rules.json"
-  },
-  "emulators": {
-    "hosting": {
-      "port": 5000
-    },
-    "functions": {
-      "port": 5001
-    },
-    "firestore": {
-      "port": 8080
-    },
-    "database": {
-      "port": 9000
+    ],
+    "firebase_config": {
+      "apiKey": "YOUR_API_KEY",
+      "authDomain": "YOUR_PROJECT.firebaseapp.com",
+      "projectId": "YOUR_PROJECT_ID",
+      "storageBucket": "YOUR_PROJECT.appspot.com",
+      "messagingSenderId": "YOUR_SENDER_ID",
+      "appId": "YOUR_APP_ID"
     }
   }
 }
